@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Georgia;
+    src: url(../fonts/Georgia.ttf);
+}
+@font-face {
+    font-family: Arial;
+    src: url(../fonts/Arial.TTF);
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.btn {
+    border-radius: 100px;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 106%;
+    letter-spacing: 6%;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 2px solid rgb(241, 205, 179);
+}
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.btn-color {
+    background-color: rgb(241, 205, 179);
+}
+.btn-color:hover {
+    background: rgb(253, 220, 196);
+    border: 2px solid rgb(253, 220, 196);
+}
+.btn-transparent {
+    background-color: transparent;
+    transition: .3s;
+}
+.btn-transparent:not(.not-active):hover {
+    background: rgb(253, 220, 196);
+    border: 2px solid rgb(253, 220, 196);;
+}
+footer {
+    padding-top: 40px;
+    background: url(../images/noise_transparent@2x.png),radial-gradient(7204.00% 73.00% at 6% 50%,rgb(81, 61, 47),rgb(26, 26, 28) 100%),rgb(33, 31, 32);
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts {
+    max-width: 278px;
+}
+.contacts__title, .locations__title {
+    color: rgb(255, 255, 255);
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 6%;
+    margin-bottom: 40px;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.contacts__item, .locations__item, .contacts__item a {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: rgb(241, 205, 179);
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 6%;
+    text-decoration: none;
+}
+.locations__item a {
+    text-decoration: none;
+    align-items: center;
+    color: rgb(241, 205, 179);
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: 6%;
+    text-decoration: none;
+}
+.locations {
+    max-width: 280px;
+}
+.locations__item:not(:last-child) {
+    margin-bottom: 32px;
+}
